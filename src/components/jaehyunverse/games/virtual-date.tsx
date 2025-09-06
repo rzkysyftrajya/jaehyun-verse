@@ -94,7 +94,7 @@ const story: Story = {
     isEnding: true,
   },
   park: {
-    image: "https://picsum.photos/seed/date-park/800/600",
+    image: "/jaehyun-taman.png",
     imageHint: "beautiful park sunset",
     text: 'Kalian berjalan santai di taman. Udara sore ini sangat sejuk. Saat senja mulai tiba, langit berubah warna menjadi keemasan. "Momen seperti ini jadi lebih spesial karena ada kamu," kata Jaehyun pelan.',
     choices: [
@@ -103,7 +103,7 @@ const story: Story = {
     ],
   },
   park_talk: {
-    image: "https://picsum.photos/seed/date-park-talk/800/600",
+    image: "/jaehyun-bangku.png",
     imageHint: "couple talking on bench",
     text: 'Kalian duduk di bangku kayu, menikmati sisa senja. Jaehyun bercerita tentang harinya, dan kamu mendengarkan dengan saksama. "Aku merasa bisa menjadi diriku sendiri saat bersamamu," ucapnya tulus. Dia lalu menoleh padamu. "Apa momen paling membahagiakan buatmu hari ini?"',
     choices: [
@@ -115,7 +115,7 @@ const story: Story = {
     ],
   },
   park_photo: {
-    image: "https://picsum.photos/seed/date-park-photo/800/600",
+    image: "/jaehyun-pose.png",
     imageHint: "phone photography",
     text: 'Kamu mengeluarkan ponselmu, dan Jaehyun langsung berpose. Kalian mengambil banyak foto konyol dan artistik dengan latar belakang senja. "Kamu fotografer pribadiku sekarang," katanya sambil tertawa melihat hasilnya.',
     choices: [{ text: "Tentu saja!", nextScene: "photobooth_intro" }],
