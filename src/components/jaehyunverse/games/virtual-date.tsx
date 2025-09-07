@@ -133,14 +133,15 @@ const story: Story = {
     choices: [{ text: "Akhiri kencan manis ini", nextScene: "park_ending" }],
   },
   park_ending: {
-    image: "https://picsum.photos/seed/date-end-park/800/600",
+    image: "/jaehyun-lampu-taman.png",
     imageHint: "couple silhouette sunset",
     text: "Di bawah lampu taman yang temaram dan dengan strip foto di tanganmu, kamu merasa menjadi orang paling beruntung. Kencan sederhana ini menjadi luar biasa karena momen-momen kecil yang manis dan tulus bersamanya. Hari ini, kamu melihat sisi hangat dan romantisnya.",
     choices: [{ text: "Kencan Lagi?", nextScene: "start" }],
     isEnding: true,
   },
   arcade: {
-    image: "https://picsum.photos/seed/date-arcade/800/600",
+    image:
+      "https://i.pinimg.com/1200x/98/16/7c/98167c43e022d3e4cc3e31ae51742bb5.jpg",
     imageHint: "arcade games neon",
     text: 'Di dalam arcade yang berisik, sisi kompetitif Jaehyun keluar. Dia mengajarimu cara bermain basket dan balap mobil. "Kita tim!" serunya. "Kalau kita menang, hadiahnya untukmu. Kalau kalah, kamu traktir aku es krim. Deal?"',
     choices: [
