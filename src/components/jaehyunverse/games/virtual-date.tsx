@@ -140,8 +140,7 @@ const story: Story = {
     isEnding: true,
   },
   arcade: {
-    image:
-      "https://i.pinimg.com/1200x/98/16/7c/98167c43e022d3e4cc3e31ae51742bb5.jpg",
+    image: "/jaehyun-arcade.png",
     imageHint: "arcade games neon",
     text: 'Di dalam arcade yang berisik, sisi kompetitif Jaehyun keluar. Dia mengajarimu cara bermain basket dan balap mobil. "Kita tim!" serunya. "Kalau kita menang, hadiahnya untukmu. Kalau kalah, kamu traktir aku es krim. Deal?"',
     choices: [
@@ -150,7 +149,7 @@ const story: Story = {
     ],
   },
   arcade_game: {
-    image: "https://picsum.photos/seed/date-claw-machine/800/600",
+    image: "/jaehyun-capit.png",
     imageHint: "claw machine intense",
     text: 'Setelah mencoba berbagai permainan, kalian berhenti di depan mesin capit. Ada boneka peach yang lucu di dalamnya. "Aku akan dapatkan itu untukmu," kata Jaehyun dengan tatapan serius.',
     choices: [
@@ -159,26 +158,26 @@ const story: Story = {
     ],
   },
   arcade_prize: {
-    image: "https://picsum.photos/seed/date-arcade-prize/800/600",
+    image: "/jaehyun-peach.png",
     imageHint: "man holding doll",
     text: 'Setelah beberapa kali mencoba dengan gigih, Jaehyun berhasil! Dia menyerahkan boneka peach itu dengan bangga. "Untuk peach-ku," katanya sambil mengedipkan mata. "Sudah malam, aku antar kamu pulang ya?"',
     choices: [{ text: "Oke, terima kasih.", nextScene: "walk_home_fun" }],
   },
   walk_home_fun: {
-    image: "https://picsum.photos/seed/date-home/800/600",
+    image: "/daily6.png",
     imageHint: "couple walking at night",
     text: 'Sambil memeluk boneka peach pemberiannya, Jaehyun mengantarmu sampai depan rumah. "Aku senang sekali hari ini, rasanya lepas sekali," katanya. "Kita harus main lagi lain kali." Dia menatapmu sejenak sebelum akhirnya pamit.',
     choices: [{ text: "Akhiri kencan seru ini", nextScene: "arcade_ending" }],
   },
   arcade_ending: {
-    image: "https://picsum.photos/seed/date-end-arcade/800/600",
+    image: "/boneka-jaehyun.png",
     imageHint: "girl holding doll",
     text: "Kamu memeluk boneka peach itu erat-erat. Ini bukan sekadar boneka, tapi bukti dari tawa, semangat kompetitifnya, dan keinginannya untuk membuatmu bahagia hari ini. Malam ini, kamu melihat sisi ceria dan gigihnya yang menggemaskan.",
     choices: [{ text: "Kencan Lagi?", nextScene: "start" }],
     isEnding: true,
   },
   movie: {
-    image: "https://picsum.photos/seed/date-movie-lobby/800/600",
+    image: "/jaehyun-bioskop.png",
     imageHint: "movie theater lobby",
     text: 'Di bioskop, kalian berdebat kecil tentang popcorn. "Asin atau manis?" tanya Jaehyun. "Atau kita beli keduanya saja, biar adil?"',
     choices: [
@@ -188,7 +187,7 @@ const story: Story = {
     ],
   },
   movie_theater: {
-    image: "https://picsum.photos/seed/date-movie/800/600",
+    image: "/daily3.png",
     imageHint: "cinema screen holding hands",
     text: "Di tengah film romantis, saat adegan yang mengharukan, kamu merasakan tangannya dengan lembut mencari dan menggenggam tanganmu di dalam kegelapan. Genggamannya hangat dan erat, membuatmu lupa pada film yang sedang diputar.",
     choices: [
@@ -196,7 +195,7 @@ const story: Story = {
     ],
   },
   movie_ending_intro: {
-    image: "https://picsum.photos/seed/date-movie-exit/800/600",
+    image: "/daily4.png",
     imageHint: "couple leaving cinema",
     text: 'Film selesai, tapi genggaman tangannya tak kunjung lepas bahkan saat kalian keluar dari teater. "Filmnya bagus," bisiknya, "tapi aku lebih suka bagian saat aku bisa memegang tanganmu." Udara di luar ternyata cukup dingin.',
     choices: [
@@ -205,7 +204,7 @@ const story: Story = {
     ],
   },
   jacket_moment: {
-    image: "https://picsum.photos/seed/date-jacket/800/600",
+    image: "/daily6.png",
     imageHint: "man giving woman jacket",
     text: 'Tanpa ragu, Jaehyun melepas jaketnya dan menyampirkannya di bahumu. Aroma parfumnya yang khas langsung menyelimutimu. "Jangan sampai sakit," katanya lembut. Kalian berjalan pelan di bawah lampu jalan, menciptakan momen romantis yang sempurna.',
     choices: [
@@ -213,7 +212,7 @@ const story: Story = {
     ],
   },
   movie_ending: {
-    image: "https://picsum.photos/seed/date-end-movie/800/600",
+    image: "/hero1.png",
     imageHint: "woman wearing big jacket",
     text: "Kamu pulang dengan jaket Jaehyun yang masih melekat di tubuhmu. Kehangatan dan aroma parfumnya menjadi kenangan yang tak terlupakan. Bukan filmnya, tapi semua momen kecil bersamanya yang membuat malam ini sempurna. Kamu sadar, di balik sosoknya yang tenang, dia adalah orang yang sangat perhatian dan romantis.",
     choices: [{ text: "Kencan Lagi?", nextScene: "start" }],
