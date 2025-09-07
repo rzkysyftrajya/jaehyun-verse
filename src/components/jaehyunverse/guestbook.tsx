@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import GlassCard from './shared/glass-card';
-import { MessageSquare, Send } from 'lucide-react';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import GlassCard from "./shared/glass-card";
+import { MessageSquare, Send } from "lucide-react";
 
 interface Signature {
   name: string;
@@ -14,15 +14,27 @@ interface Signature {
 }
 
 const initialSignatures: Signature[] = [
-    { name: 'Uti Gemes', message: 'Jaehyun, you are my sunshine! ☀️', timestamp: '2 hours ago' },
-    { name: 'Peach Enthusiast', message: 'Fighting!! Looking forward to the next comeback!', timestamp: '1 day ago' },
-    { name: 'Valentine Boy Fan', message: 'Your voice is like honey 🍯', timestamp: '3 days ago' },
+  {
+    name: "Uti Gemes",
+    message: "Jaehyun, you are my sunshine! ☀️",
+    timestamp: "2 hours ago",
+  },
+  {
+    name: "Peach Enthusiast",
+    message: "Fighting!! Looking forward to the next comeback!",
+    timestamp: "1 day ago",
+  },
+  {
+    name: "Valentine Boy Fan",
+    message: "Your voice is like honey 🍯",
+    timestamp: "3 days ago",
+  },
 ];
 
 export default function Guestbook() {
   const [signatures, setSignatures] = useState<Signature[]>(initialSignatures);
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -34,11 +46,11 @@ export default function Guestbook() {
       const newSignature: Signature = {
         name,
         message,
-        timestamp: 'Just now',
+        timestamp: "Just now",
       };
       setSignatures([newSignature, ...signatures]);
-      setName('');
-      setMessage('');
+      setName("");
+      setMessage("");
       setIsSubmitting(false);
     }, 500);
   };
@@ -47,7 +59,10 @@ export default function Guestbook() {
     <div className="w-full max-w-2xl">
       <GlassCard className="mb-8">
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
-          <h3 className="font-bold text-lg flex items-center gap-2"><MessageSquare className="text-primary" />Tinggalkan Pesan</h3>
+          <h3 className="font-bold text-lg flex items-center gap-2">
+            <MessageSquare className="text-primary" />
+            Tinggalkan Pesan
+          </h3>
           <Input
             placeholder="Nama panggilanmu..."
             value={name}
@@ -63,8 +78,13 @@ export default function Guestbook() {
             maxLength={100}
             rows={3}
           />
-          <Button type="submit" className="w-full bg-accent hover:bg-accent/80 text-accent-foreground" disabled={isSubmitting}>
-             <Send className="mr-2" /> {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
+          <Button
+            type="submit"
+            className="w-full bg-accent hover:bg-accent/80 text-accent-foreground"
+            disabled={isSubmitting}
+          >
+            <Send className="mr-2" />{" "}
+            {isSubmitting ? "Mengirim..." : "Kirim Pesan"}
           </Button>
         </form>
       </GlassCard>
