@@ -121,13 +121,13 @@ const story: Story = {
     choices: [{ text: "Tentu saja!", nextScene: "photobooth_intro" }],
   },
   photobooth_intro: {
-    image: "https://picsum.photos/seed/date-photobooth-ask/800/600",
+    image: "/jaehyun-jalan-malam.png",
     imageHint: "couple walking pointing",
     text: 'Saat hari mulai gelap dan lampu taman menyala, kalian melihat sebuah photo booth di kejauhan. "Sepertinya seru," kata Jaehyun sambil menunjuk ke sana. "Mau coba? Untuk kenang-kenangan."',
     choices: [{ text: "Ayo!", nextScene: "photobooth" }],
   },
   photobooth: {
-    image: "https://picsum.photos/seed/date-photobooth/800/600",
+    image: "/jaehyun-photobooth.png",
     imageHint: "photo booth couple funny",
     text: 'Di dalam photo booth yang sempit, kalian berpose konyol dan tertawa bersama. Jaehyun memasang ekspresi lucu yang belum pernah kamu lihat sebelumnya. Hasil fotonya menjadi bukti nyata betapa menyenangkannya hari itu. "Simpan baik-baik ya," katanya sambil menyerahkan satu set foto padamu.',
     choices: [{ text: "Akhiri kencan manis ini", nextScene: "park_ending" }],
